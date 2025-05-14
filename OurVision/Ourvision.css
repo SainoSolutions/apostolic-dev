@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .vision-section {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .vision-text {
+    background-color: #000;
+    color: white;
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .vision-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .vision-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .vision-image {
+    flex: 1;
+  }
+  
+  .vision-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .vision-section {
+      flex-direction: column;
+    }
+  
+    .vision-image,
+    .vision-text {
+      height: 50vh;
+    }
+  }

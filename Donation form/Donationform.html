@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Our Cause</title>
+    <link rel="stylesheet" href="Donationform.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Support Our Cause</h2>
+      <form>
+        <div class="name-fields">
+          <div>
+            <label>Full Name <span class="required">*</span></label>
+            <input type="text" placeholder="First Name" required />
+          </div>
+          <br />
+          <div>
+            <label>&nbsp;</label>
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <br />
+        </div>
+
+        <div class="contact-fields">
+          <div>
+            <label>E-mail <span class="required">*</span></label>
+            <input type="email" placeholder="ex: myname@example.com" required />
+          </div>
+          <br />
+          <div>
+            <label>Phone Number <span class="required">*</span></label>
+            <input type="tel" placeholder="(000) 000-0000" required />
+          </div>
+        </div>
+        <br />
+
+        <div class="donation-type">
+          <label>Type of Donation <span class="required">*</span></label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="donationType" required /> Love
+              Offering</label
+            >
+            <label
+              ><input type="radio" name="donationType" /> Building
+              Expansion</label
+            >
+            <label
+              ><input type="radio" name="donationType" /> One Time
+              Donation</label
+            >
+          </div>
+        </div>
+
+        <div class="comments">
+          <label>Comments <span class="required">*</span></label>
+          <textarea
+            rows="4"
+            placeholder="Your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="amount-section">
+          <label>Donation Amount</label>
+          <div class="amount-input">
+            <input
+              type="number"
+              placeholder="Please enter your donation amount"
+            />
+            <span>USD</span>
+          </div>
+        </div>
+
+        <div class="payment-section">
+          <label>Payment Methods</label>
+          <div class="payment-options">
+            <label
+              ><input type="radio" name="payment" /> Debit or Credit Card</label
+            >
+            <label><input type="radio" name="payment" /> PayPal</label>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
